@@ -16,7 +16,7 @@ export default function ProductPage() {
     return (
       <div className="pt-32 pb-16 text-center">
         <h1 className="font-display text-4xl text-[#C5C3C6]">Товар не найден</h1>
-        <Link to="/" className="mt-4 inline-block text-[#F7B538] hover:underline">
+        <Link to="/" className="mt-4 inline-block text-[#A67C52] hover:underline">
           Вернуться на главную
         </Link>
       </div>
@@ -40,7 +40,7 @@ export default function ProductPage() {
         {/* Back */}
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-sm text-[#5C677D] hover:text-[#F7B538] transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-sm text-[#5C677D] hover:text-[#A67C52] transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
           Назад
@@ -59,7 +59,7 @@ export default function ProductPage() {
 
           {/* Info */}
           <div className="flex flex-col">
-            <span className="text-[10px] text-[#F7B538] tracking-[0.3em] uppercase">
+            <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">
               {product.sport}
             </span>
             <h1 className="font-display text-4xl sm:text-5xl text-[#C5C3C6] mt-2">
@@ -67,7 +67,7 @@ export default function ProductPage() {
             </h1>
 
             <div className="mt-4 flex items-center gap-4">
-              <span className="text-3xl font-display text-[#F7B538]">
+              <span className="text-3xl font-display text-[#A67C52]">
                 {product.price.toLocaleString('ru-RU')} ₽
               </span>
               {product.oldPrice && (
@@ -81,7 +81,7 @@ export default function ProductPage() {
             <div className="mt-4 flex items-center gap-2">
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-[#F7B538]" fill="currentColor" />
+                  <Star key={i} className="w-4 h-4 text-[#A67C52]" fill="currentColor" />
                 ))}
               </div>
               <span className="text-sm text-[#5C677D]">4.9 (127 отзывов)</span>
@@ -96,7 +96,7 @@ export default function ProductPage() {
             <div className="mt-6 space-y-2">
               {product.features.map((feature, i) => (
                 <div key={i} className="flex items-center gap-2 text-sm text-[#5C677D]">
-                  <Check className="w-4 h-4 text-[#F7B538] shrink-0" />
+                  <Check className="w-4 h-4 text-[#A67C52] shrink-0" />
                   {feature}
                 </div>
               ))}
@@ -105,7 +105,7 @@ export default function ProductPage() {
             {/* Size Selection */}
             <div className="mt-8">
               <h3 className="text-sm font-medium text-[#C5C3C6] mb-3">
-                РАЗМЕР <span className="text-[#F7B538]">*</span>
+                РАЗМЕР <span className="text-[#A67C52]">*</span>
               </h3>
               <div className="flex flex-wrap gap-2">
                 {product.sizes.map((size) => (
@@ -114,7 +114,7 @@ export default function ProductPage() {
                     onClick={() => setSelectedSize(size)}
                     className={`w-12 h-12 border rounded-md text-sm font-medium transition-all ${
                       selectedSize === size
-                        ? 'border-[#F7B538] bg-[#F7B538]/10 text-[#F7B538]'
+                        ? 'border-[#A67C52] bg-[#A67C52]/10 text-[#A67C52]'
                         : 'border-white/10 text-[#5C677D] hover:border-[#C5C3C6] hover:text-[#C5C3C6]'
                     }`}
                   >
@@ -133,7 +133,7 @@ export default function ProductPage() {
                   added
                     ? 'bg-green-600 text-white'
                     : selectedSize
-                    ? 'bg-[#F7B538] hover:bg-[#BC6C25] text-[#000814]'
+                    ? 'bg-[#A67C52] hover:bg-[#BC6C25] text-[#000814]'
                     : 'bg-white/5 text-[#5C677D] cursor-not-allowed'
                 }`}
               >
@@ -154,15 +154,15 @@ export default function ProductPage() {
             {/* Delivery Info */}
             <div className="mt-8 grid grid-cols-3 gap-4 pt-8 border-t border-white/5">
               <div className="text-center">
-                <Truck className="w-5 h-5 text-[#F7B538] mx-auto mb-2" />
+                <Truck className="w-5 h-5 text-[#A67C52] mx-auto mb-2" />
                 <div className="text-xs text-[#5C677D]">Доставка 2-7 дней</div>
               </div>
               <div className="text-center">
-                <RotateCcw className="w-5 h-5 text-[#F7B538] mx-auto mb-2" />
+                <RotateCcw className="w-5 h-5 text-[#A67C52] mx-auto mb-2" />
                 <div className="text-xs text-[#5C677D]">Возврат 14 дней</div>
               </div>
               <div className="text-center">
-                <Shield className="w-5 h-5 text-[#F7B538] mx-auto mb-2" />
+                <Shield className="w-5 h-5 text-[#A67C52] mx-auto mb-2" />
                 <div className="text-xs text-[#5C677D]">Гарантия качества</div>
               </div>
             </div>

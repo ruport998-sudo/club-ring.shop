@@ -55,7 +55,7 @@ export default function AIChat() {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#F7B538] hover:bg-[#BC6C25] text-[#000814] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#A67C52] hover:bg-[#BC6C25] text-[#000814] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
       >
         {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}
       </button>
@@ -65,8 +65,8 @@ export default function AIChat() {
         <div className="fixed bottom-24 right-6 z-50 w-[360px] max-w-[calc(100vw-3rem)] h-[500px] bg-[#000814]/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl flex flex-col overflow-hidden">
           {/* Header */}
           <div className="px-4 py-3 border-b border-white/5 flex items-center gap-3">
-            <div className="w-8 h-8 bg-[#F7B538]/20 rounded-full flex items-center justify-center">
-              <Bot className="w-5 h-5 text-[#F7B538]" />
+            <div className="w-8 h-8 bg-[#A67C52]/20 rounded-full flex items-center justify-center">
+              <Bot className="w-5 h-5 text-[#A67C52]" />
             </div>
             <div>
               <div className="text-sm font-medium text-[#C5C3C6]">ИИ-Консультант</div>
@@ -79,13 +79,13 @@ export default function AIChat() {
             {messages.map((msg, i) => (
               <div key={i} className={`flex gap-2 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 {msg.role === 'assistant' && (
-                  <div className="w-6 h-6 bg-[#F7B538]/20 rounded-full flex items-center justify-center shrink-0 mt-1">
-                    <Bot className="w-4 h-4 text-[#F7B538]" />
+                  <div className="w-6 h-6 bg-[#A67C52]/20 rounded-full flex items-center justify-center shrink-0 mt-1">
+                    <Bot className="w-4 h-4 text-[#A67C52]" />
                   </div>
                 )}
                 <div className={`max-w-[75%] px-3 py-2 rounded-lg text-sm ${
                   msg.role === 'user'
-                    ? 'bg-[#F7B538] text-[#000814]'
+                    ? 'bg-[#A67C52] text-[#000814]'
                     : 'bg-white/5 text-[#C5C3C6]'
                 }`}>
                   {msg.content}
@@ -99,8 +99,8 @@ export default function AIChat() {
             ))}
             {isLoading && (
               <div className="flex gap-2">
-                <div className="w-6 h-6 bg-[#F7B538]/20 rounded-full flex items-center justify-center shrink-0">
-                  <Bot className="w-4 h-4 text-[#F7B538] animate-pulse" />
+                <div className="w-6 h-6 bg-[#A67C52]/20 rounded-full flex items-center justify-center shrink-0">
+                  <Bot className="w-4 h-4 text-[#A67C52] animate-pulse" />
                 </div>
                 <div className="bg-white/5 px-3 py-2 rounded-lg">
                   <div className="flex gap-1">
@@ -122,12 +122,12 @@ export default function AIChat() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Введите сообщение..."
-                className="flex-1 bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-[#C5C3C6] placeholder:text-[#5C677D] focus:outline-none focus:border-[#F7B538] transition-colors"
+                className="flex-1 bg-white/5 border border-white/10 rounded-lg px-3 py-2 text-sm text-[#C5C3C6] placeholder:text-[#5C677D] focus:outline-none focus:border-[#A67C52] transition-colors"
               />
               <button
                 onClick={handleSend}
                 disabled={!input.trim() || isLoading}
-                className="w-9 h-9 bg-[#F7B538] hover:bg-[#BC6C25] disabled:opacity-50 text-[#000814] rounded-lg flex items-center justify-center transition-colors"
+                className="w-9 h-9 bg-[#A67C52] hover:bg-[#BC6C25] disabled:opacity-50 text-[#000814] rounded-lg flex items-center justify-center transition-colors"
               >
                 <Send className="w-4 h-4" />
               </button>

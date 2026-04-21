@@ -31,28 +31,28 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="flex items-center gap-3">
-              <Truck className="w-5 h-5 text-[#F7B538] shrink-0" />
+              <Truck className="w-5 h-5 text-[#A67C52] shrink-0" />
               <div>
                 <div className="text-sm font-medium text-[#C5C3C6]">Доставка по РФ</div>
                 <div className="text-xs text-[#5C677D]">2-7 рабочих дней</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <RotateCcw className="w-5 h-5 text-[#F7B538] shrink-0" />
+              <RotateCcw className="w-5 h-5 text-[#A67C52] shrink-0" />
               <div>
                 <div className="text-sm font-medium text-[#C5C3C6]">Возврат 14 дней</div>
                 <div className="text-xs text-[#5C677D]">Без лишних вопросов</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <Shield className="w-5 h-5 text-[#F7B538] shrink-0" />
+              <Shield className="w-5 h-5 text-[#A67C52] shrink-0" />
               <div>
                 <div className="text-sm font-medium text-[#C5C3C6]">Гарантия качества</div>
                 <div className="text-xs text-[#5C677D]">Только оригиналы</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <CreditCard className="w-5 h-5 text-[#F7B538] shrink-0" />
+              <CreditCard className="w-5 h-5 text-[#A67C52] shrink-0" />
               <div>
                 <div className="text-sm font-medium text-[#C5C3C6]">Оплата картой</div>
                 <div className="text-xs text-[#5C677D]">Visa, Mastercard, МИР</div>
@@ -67,7 +67,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="font-display text-3xl text-[#F7B538] tracking-wider">
+            <Link to="/" className="font-display text-3xl text-[#A67C52] tracking-wider">
               CLUB RING
             </Link>
             <p className="mt-4 text-sm text-[#5C677D] leading-relaxed">
@@ -75,15 +75,15 @@ export default function Footer() {
             </p>
             <div className="mt-6 space-y-2">
               <div className="flex items-center gap-2 text-sm text-[#5C677D]">
-                <Phone className="w-4 h-4 text-[#F7B538]" />
+                <Phone className="w-4 h-4 text-[#A67C52]" />
                 +7 (999) 123-45-67
               </div>
               <div className="flex items-center gap-2 text-sm text-[#5C677D]">
-                <Mail className="w-4 h-4 text-[#F7B538]" />
+                <Mail className="w-4 h-4 text-[#A67C52]" />
                 info@clubring.ru
               </div>
               <div className="flex items-center gap-2 text-sm text-[#5C677D]">
-                <MapPin className="w-4 h-4 text-[#F7B538]" />
+                <MapPin className="w-4 h-4 text-[#A67C52]" />
                 Москва, ул. Спортивная, 1
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {shopCategories.map((cat) => (
                 <li key={cat.path}>
-                  <Link to={cat.path} className="text-sm text-[#5C677D] hover:text-[#F7B538] transition-colors">
+                  <Link to={cat.path} className="text-sm text-[#5C677D] hover:text-[#A67C52] transition-colors">
                     {cat.label}
                   </Link>
                 </li>
@@ -109,7 +109,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {sportCategories.map((cat) => (
                 <li key={cat.path}>
-                  <Link to={cat.path} className="text-sm text-[#5C677D] hover:text-[#F7B538] transition-colors">
+                  <Link to={cat.path} className="text-sm text-[#5C677D] hover:text-[#A67C52] transition-colors">
                     {cat.label}
                   </Link>
                 </li>
@@ -123,7 +123,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {infoLinks.map((link) => (
                 <li key={link.path}>
-                  <Link to={link.path} className="text-sm text-[#5C677D] hover:text-[#F7B538] transition-colors">
+                  <Link to={link.path} className="text-sm text-[#5C677D] hover:text-[#A67C52] transition-colors">
                     {link.label}
                   </Link>
                 </li>

@@ -12,7 +12,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   const defaultSize = product.sizes[0];
 
   return (
-    <div className="group relative bg-[#000814] border border-white/5 rounded-lg overflow-hidden hover:border-[#F7B538]/30 transition-all duration-500">
+    <div className="group relative bg-[#000814] border border-white/5 rounded-lg overflow-hidden hover:border-[#A67C52]/30 transition-all duration-500">
       {/* Image */}
       <Link to={`/product/${product.id}`} className="block relative aspect-square overflow-hidden bg-[#000a1a]">
         <img
@@ -27,7 +27,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               e.preventDefault();
               addToCart(product, defaultSize);
             }}
-            className="bg-[#F7B538] hover:bg-[#BC6C25] text-[#000814] px-6 py-3 rounded-md font-medium text-sm flex items-center gap-2 transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300"
+            className="bg-[#A67C52] hover:bg-[#BC6C25] text-[#000814] px-6 py-3 rounded-md font-medium text-sm flex items-center gap-2 transition-colors transform translate-y-4 group-hover:translate-y-0 duration-300"
           >
             <ShoppingBag className="w-4 h-4" />
             В КОРЗИНУ
@@ -36,7 +36,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Badges */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
           {product.isNew && (
-            <span className="bg-[#F7B538] text-[#000814] text-[10px] font-bold px-2 py-1 rounded tracking-wider">
+            <span className="bg-[#A67C52] text-[#000814] text-[10px] font-bold px-2 py-1 rounded tracking-wider">
               NEW
             </span>
           )}
@@ -60,12 +60,12 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.sport}
         </div>
         <Link to={`/product/${product.id}`}>
-          <h3 className="font-display text-lg text-[#C5C3C6] group-hover:text-[#F7B538] transition-colors leading-tight">
+          <h3 className="font-display text-lg text-[#C5C3C6] group-hover:text-[#A67C52] transition-colors leading-tight">
             {product.name}
           </h3>
         </Link>
         <div className="mt-3 flex items-center gap-3">
-          <span className="text-[#F7B538] font-display text-xl">
+          <span className="text-[#A67C52] font-display text-xl">
             {product.price.toLocaleString('ru-RU')} ₽
           </span>
           {product.oldPrice && (

@@ -10,7 +10,7 @@ export default function FAQPage() {
     <div className="pt-24 sm:pt-28 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <span className="text-[10px] text-[#F7B538] tracking-[0.3em] uppercase">FAQ</span>
+          <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">FAQ</span>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#C5C3C6] mt-2">
             ВОПРОСЫ И ОТВЕТЫ
           </h1>
@@ -31,7 +31,7 @@ export default function FAQPage() {
               >
                 <span className="font-display text-lg text-[#C5C3C6] pr-4">{item.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-[#F7B538] shrink-0 transition-transform ${
+                  className={`w-5 h-5 text-[#A67C52] shrink-0 transition-transform ${
                     openIndex === i ? 'rotate-180' : ''
                   }`}
                 />
@@ -45,15 +45,15 @@ export default function FAQPage() {
           ))}
         </div>
 
-        <div className="mt-12 p-8 bg-gradient-to-r from-[#F7B538]/10 to-[#BC6C25]/10 border border-[#F7B538]/20 rounded-xl text-center">
-          <MessageCircle className="w-10 h-10 text-[#F7B538] mx-auto mb-4" />
+        <div className="mt-12 p-8 bg-gradient-to-r from-[#A67C52]/10 to-[#BC6C25]/10 border border-[#A67C52]/20 rounded-xl text-center">
+          <MessageCircle className="w-10 h-10 text-[#A67C52] mx-auto mb-4" />
           <h3 className="font-display text-xl text-[#C5C3C6]">Не нашли ответ?</h3>
           <p className="mt-2 text-sm text-[#5C677D]">
             Наши специалисты с радостью помогут вам. Свяжитесь с нами удобным способом.
           </p>
           <Link
             to="/contacts"
-            className="mt-4 inline-flex items-center gap-2 bg-[#F7B538] hover:bg-[#BC6C25] text-[#000814] px-6 py-3 rounded-md font-medium text-sm transition-colors"
+            className="mt-4 inline-flex items-center gap-2 bg-[#A67C52] hover:bg-[#BC6C25] text-[#000814] px-6 py-3 rounded-md font-medium text-sm transition-colors"
           >
             Связаться с нами
           </Link>

@@ -60,7 +60,7 @@ export const products: Product[] = [
     id: "sneakers-3",
     name: "COURT DOMINATOR MID",
     price: 16900,
-    image: "/products/sneakers-3.jpg",
+    image: "/products/sneakers-1.jpg",
     category: "sneakers",
     sport: "basketball",
     description: "Баскетбольные кроссовки средней высоты. Агрессивный дизайн с металлическими элементами. Усиленная боковая поддержка для резких поворотов. Воздухопроницаемый верх.",
@@ -71,7 +71,7 @@ export const products: Product[] = [
     id: "sneakers-4",
     name: "STEALTH RUNNER",
     price: 14900,
-    image: "/products/sneakers-4.jpg",
+    image: "/products/sneakers-2.jpg",
     category: "sneakers",
     sport: "running",
     description: "Минималистичные беговые кроссовки. Лёгкий дышащий верх с бронзовым логотипом. Инновационная подошва с системой реактивной амортизации. Идеальны для ежедневных пробежек.",
@@ -84,7 +84,7 @@ export const products: Product[] = [
     name: "SHADOW TRACKSUIT SET",
     price: 24500,
     oldPrice: 28900,
-    image: "/products/tracksuit-1.jpg",
+    image: "/products/jacket-1.jpg",
     category: "tracksuits",
     sport: "training",
     description: "Премиальный спортивный костюм из плотного хлопка. Кофта на молнии с серебристыми деталями и соответствующие джоггеры. Идеален для разминки и повседневной носки. Минималистичный дизайн с акцентом на качество материала.",
@@ -119,7 +119,7 @@ export const products: Product[] = [
     id: "tshirt-1",
     name: "FIGHTER COMPRESSION TEE",
     price: 5900,
-    image: "/products/tshirt-1.jpg",
+    image: "/products/mma-shorts-1.jpg",
     category: "tshirts",
     sport: "mma",
     description: "Компрессионная футболка для единоборств. Облегающий силуэт из эластичной ткани с влагоотводом. Бронзовый логотип на груди. Плоские швы для комфорта при борьбе. Защита от микробов.",
@@ -165,7 +165,7 @@ export const products: Product[] = [
     id: "soccer-jersey-1",
     name: "PITCH MASTER JERSEY",
     price: 7900,
-    image: "/products/soccer-jersey-1.jpg",
+    image: "/products/basketball-jersey-1.jpg",
     category: "jerseys",
     sport: "football",
     description: "Футбольная тренировочная футболка с бронзовым логотипом. Технологичная ткань с системой влагоотвода Dri-Fit. Облегающий атлетический крой. Плоские швы для комфорта.",
@@ -239,17 +239,17 @@ export const reviews: Review[] = [
 
 export const categories = [
   { id: "sneakers", name: "КРОССОВКИ", image: "/products/sneakers-1.jpg" },
-  { id: "tracksuits", name: "СПОРТИВНЫЕ КОСТЮМЫ", image: "/products/tracksuit-1.jpg" },
+  { id: "tracksuits", name: "СПОРТИВНЫЕ КОСТЮМЫ", image: "/products/jacket-1.jpg" },
   { id: "jackets", name: "СПОРТИВНЫЕ КУРТКИ", image: "/products/jacket-1.jpg" },
   { id: "caps", name: "КЕПКИ-БЕЙСБОЛКИ", image: "/products/cap-1.jpg" },
-  { id: "tshirts", name: "ФУТБОЛКИ", image: "/products/tshirt-1.jpg" },
+  { id: "tshirts", name: "ФУТБОЛКИ", image: "/products/mma-shorts-1.jpg" },
 ];
 
 export const sportCategories = [
-  { id: "boxing", name: "БОКС", image: "/products/boxing-gloves-1.jpg" },
-  { id: "football", name: "ФУТБОЛ", image: "/products/soccer-jersey-1.jpg" },
-  { id: "mma", name: "MMA", image: "/products/mma-shorts-1.jpg" },
-  { id: "basketball", name: "БАСКЕТБОЛ", image: "/products/basketball-jersey-1.jpg" },
+  { id: "boxing", name: "БОКС", nameGenitive: "БОКСА", image: "/products/boxing-gloves-1.jpg" },
+  { id: "football", name: "ФУТБОЛ", nameGenitive: "ФУТБОЛА", image: "/products/basketball-jersey-1.jpg" },
+  { id: "mma", name: "MMA", nameGenitive: "MMA", image: "/products/mma-shorts-1.jpg" },
+  { id: "basketball", name: "БАСКЕТБОЛ", nameGenitive: "БАСКЕТБОЛА", image: "/products/basketball-jersey-1.jpg" },
 ];
 
 export const faqData = [

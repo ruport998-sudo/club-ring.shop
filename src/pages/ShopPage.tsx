@@ -49,7 +49,7 @@ export default function ShopPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb & Title */}
         <div className="mb-8">
-          <span className="text-[10px] text-[#F7B538] tracking-[0.3em] uppercase">
+          <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">
             {sportFilter ? 'Вид спорта' : 'Каталог'}
           </span>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#C5C3C6] mt-2">
@@ -64,7 +64,7 @@ export default function ShopPage() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 pb-6 border-b border-white/5">
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className="flex items-center gap-2 text-sm text-[#C5C3C6] hover:text-[#F7B538] transition-colors"
+            className="flex items-center gap-2 text-sm text-[#C5C3C6] hover:text-[#A67C52] transition-colors"
           >
             <SlidersHorizontal className="w-4 h-4" />
             Фильтры
@@ -74,7 +74,7 @@ export default function ShopPage() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-              className="bg-[#000a1a] border border-white/10 rounded-md px-3 py-2 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#F7B538]"
+              className="bg-[#000a1a] border border-white/10 rounded-md px-3 py-2 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#A67C52]"
             >
               <option value="new">Сначала новые</option>
               <option value="price-asc">Цена: по возрастанию</option>
@@ -91,16 +91,16 @@ export default function ShopPage() {
               <div>
                 <h4 className="text-sm font-medium text-[#C5C3C6] mb-3">Цена</h4>
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#F7B538]">
-                    <input type="checkbox" className="accent-[#F7B538]" />
+                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#A67C52]">
+                    <input type="checkbox" className="accent-[#A67C52]" />
                     До 10 000 ₽
                   </label>
-                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#F7B538]">
-                    <input type="checkbox" className="accent-[#F7B538]" />
+                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#A67C52]">
+                    <input type="checkbox" className="accent-[#A67C52]" />
                     10 000 - 20 000 ₽
                   </label>
-                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#F7B538]">
-                    <input type="checkbox" className="accent-[#F7B538]" />
+                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#A67C52]">
+                    <input type="checkbox" className="accent-[#A67C52]" />
                     От 20 000 ₽
                   </label>
                 </div>
@@ -111,7 +111,7 @@ export default function ShopPage() {
                   {['S', 'M', 'L', 'XL', 'XXL', '40', '41', '42', '43', '44'].map(size => (
                     <button
                       key={size}
-                      className="w-10 h-10 border border-white/10 rounded text-xs text-[#5C677D] hover:border-[#F7B538] hover:text-[#F7B538] transition-colors"
+                      className="w-10 h-10 border border-white/10 rounded text-xs text-[#5C677D] hover:border-[#A67C52] hover:text-[#A67C52] transition-colors"
                     >
                       {size}
                     </button>
@@ -121,16 +121,16 @@ export default function ShopPage() {
               <div>
                 <h4 className="text-sm font-medium text-[#C5C3C6] mb-3">Наличие</h4>
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#F7B538]">
-                    <input type="checkbox" className="accent-[#F7B538]" defaultChecked />
+                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#A67C52]">
+                    <input type="checkbox" className="accent-[#A67C52]" defaultChecked />
                     В наличии
                   </label>
-                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#F7B538]">
-                    <input type="checkbox" className="accent-[#F7B538]" />
+                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#A67C52]">
+                    <input type="checkbox" className="accent-[#A67C52]" />
                     Новинки
                   </label>
-                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#F7B538]">
-                    <input type="checkbox" className="accent-[#F7B538]" />
+                  <label className="flex items-center gap-2 text-sm text-[#5C677D] cursor-pointer hover:text-[#A67C52]">
+                    <input type="checkbox" className="accent-[#A67C52]" />
                     Со скидкой
                   </label>
                 </div>

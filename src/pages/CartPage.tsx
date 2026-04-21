@@ -14,7 +14,7 @@ export default function CartPage() {
           <p className="mt-3 text-sm text-[#5C677D]">Добавьте товары из каталога</p>
           <Link
             to="/"
-            className="mt-6 inline-flex items-center gap-2 bg-[#F7B538] hover:bg-[#BC6C25] text-[#000814] px-8 py-3 rounded-md font-medium text-sm transition-colors"
+            className="mt-6 inline-flex items-center gap-2 bg-[#A67C52] hover:bg-[#BC6C25] text-[#000814] px-8 py-3 rounded-md font-medium text-sm transition-colors"
           >
             ПЕРЕЙТИ В КАТАЛОГ
           </Link>
@@ -50,7 +50,7 @@ export default function CartPage() {
                 </Link>
                 <div className="flex-1 min-w-0">
                   <Link to={`/product/${item.product.id}`}>
-                    <h3 className="font-display text-lg text-[#C5C3C6] hover:text-[#F7B538] transition-colors truncate">
+                    <h3 className="font-display text-lg text-[#C5C3C6] hover:text-[#A67C52] transition-colors truncate">
                       {item.product.name}
                     </h3>
                   </Link>
@@ -61,7 +61,7 @@ export default function CartPage() {
                         onClick={() =>
                           updateQuantity(item.product.id, item.size, item.quantity - 1)
                         }
-                        className="w-8 h-8 border border-white/10 rounded flex items-center justify-center text-[#C5C3C6] hover:border-[#F7B538] hover:text-[#F7B538] transition-colors"
+                        className="w-8 h-8 border border-white/10 rounded flex items-center justify-center text-[#C5C3C6] hover:border-[#A67C52] hover:text-[#A67C52] transition-colors"
                       >
                         <Minus className="w-4 h-4" />
                       </button>
@@ -72,13 +72,13 @@ export default function CartPage() {
                         onClick={() =>
                           updateQuantity(item.product.id, item.size, item.quantity + 1)
                         }
-                        className="w-8 h-8 border border-white/10 rounded flex items-center justify-center text-[#C5C3C6] hover:border-[#F7B538] hover:text-[#F7B538] transition-colors"
+                        className="w-8 h-8 border border-white/10 rounded flex items-center justify-center text-[#C5C3C6] hover:border-[#A67C52] hover:text-[#A67C52] transition-colors"
                       >
                         <Plus className="w-4 h-4" />
                       </button>
                     </div>
                     <div className="text-right">
-                      <div className="font-display text-lg text-[#F7B538]">
+                      <div className="font-display text-lg text-[#A67C52]">
                         {(item.product.price * item.quantity).toLocaleString('ru-RU')} ₽
                       </div>
                     </div>
@@ -114,7 +114,7 @@ export default function CartPage() {
                 </div>
                 <div className="border-t border-white/5 pt-3 flex justify-between">
                   <span className="font-display text-lg text-[#C5C3C6]">ВСЕГО</span>
-                  <span className="font-display text-2xl text-[#F7B538]">
+                  <span className="font-display text-2xl text-[#A67C52]">
                     {(totalPrice > 15000 ? totalPrice : totalPrice + 500).toLocaleString('ru-RU')} ₽
                   </span>
                 </div>
@@ -122,7 +122,7 @@ export default function CartPage() {
 
               <Link
                 to="/checkout"
-                className="w-full py-4 bg-[#F7B538] hover:bg-[#BC6C25] text-[#000814] rounded-md font-medium text-sm flex items-center justify-center gap-2 transition-colors"
+                className="w-full py-4 bg-[#A67C52] hover:bg-[#BC6C25] text-[#000814] rounded-md font-medium text-sm flex items-center justify-center gap-2 transition-colors"
               >
                 ОФОРМИТЬ ЗАКАЗ
                 <ArrowRight className="w-4 h-4" />

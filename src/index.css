@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +12,7 @@
     --card-foreground: 240 5% 78%;
     --popover: 216 50% 6%;
     --popover-foreground: 240 5% 78%;
-    --primary: 43 92% 59%;
+    --primary: 30 45% 49%;
     --primary-foreground: 216 100% 3%;
     --secondary: 216 30% 12%;
     --secondary-foreground: 240 5% 78%;
@@ -24,16 +24,16 @@
     --destructive-foreground: 0 0% 98%;
     --border: 216 20% 15%;
     --input: 216 20% 15%;
-    --ring: 43 92% 59%;
+    --ring: 30 45% 49%;
     --radius: 0.5rem;
     --sidebar-background: 216 50% 5%;
     --sidebar-foreground: 240 5% 78%;
-    --sidebar-primary: 43 92% 59%;
+    --sidebar-primary: 30 45% 49%;
     --sidebar-primary-foreground: 216 100% 3%;
     --sidebar-accent: 216 30% 12%;
     --sidebar-accent-foreground: 240 5% 78%;
     --sidebar-border: 216 20% 15%;
-    --sidebar-ring: 43 92% 59%;
+    --sidebar-ring: 30 45% 49%;
   }
 }
 
@@ -43,17 +43,17 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: Impact, 'Arial Black', sans-serif;
   }
   h1, h2, h3, h4, h5, h6, .font-display {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Impact, 'Arial Black', sans-serif;
     letter-spacing: 0.02em;
   }
 }
 
 @layer utilities {
   .text-bronze {
-    color: #F7B538;
+    color: #A67C52;
   }
   .text-copper {
     color: #BC6C25;

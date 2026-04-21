@@ -25,7 +25,7 @@ export default function CheckoutPage() {
     return (
       <div className="pt-32 pb-16 text-center">
         <h1 className="font-display text-4xl text-[#C5C3C6]">Корзина пуста</h1>
-        <Link to="/" className="mt-4 inline-block text-[#F7B538] hover:underline">
+        <Link to="/" className="mt-4 inline-block text-[#A67C52] hover:underline">
           Вернуться на главную
         </Link>
       </div>
@@ -42,28 +42,28 @@ export default function CheckoutPage() {
           <h1 className="font-display text-4xl text-[#C5C3C6]">ЗАКАЗ ОФОРМЛЕН!</h1>
           <p className="mt-4 text-sm text-[#5C677D]">
             Спасибо за покупку! Мы отправили подтверждение на ваш email.
-            Номер заказа: <span className="text-[#F7B538]">#{Math.random().toString(36).substr(2, 9).toUpperCase()}</span>
+            Номер заказа: <span className="text-[#A67C52]">#{Math.random().toString(36).substr(2, 9).toUpperCase()}</span>
           </p>
           <div className="mt-8 p-6 bg-[#000a1a] border border-white/5 rounded-lg text-left">
             <h3 className="font-display text-lg text-[#C5C3C6] mb-4">Информация о доставке</h3>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2 text-[#5C677D]">
-                <MapPin className="w-4 h-4 text-[#F7B538]" />
+                <MapPin className="w-4 h-4 text-[#A67C52]" />
                 {formData.city}, {formData.address}
               </div>
               <div className="flex items-center gap-2 text-[#5C677D]">
-                <Truck className="w-4 h-4 text-[#F7B538]" />
+                <Truck className="w-4 h-4 text-[#A67C52]" />
                 Доставка 2-7 рабочих дней
               </div>
               <div className="flex items-center gap-2 text-[#5C677D]">
-                <CreditCard className="w-4 h-4 text-[#F7B538]" />
+                <CreditCard className="w-4 h-4 text-[#A67C52]" />
                 Оплата при получении
               </div>
             </div>
           </div>
           <Link
             to="/"
-            className="mt-8 inline-flex items-center gap-2 bg-[#F7B538] hover:bg-[#BC6C25] text-[#000814] px-8 py-3 rounded-md font-medium text-sm transition-colors"
+            className="mt-8 inline-flex items-center gap-2 bg-[#A67C52] hover:bg-[#BC6C25] text-[#000814] px-8 py-3 rounded-md font-medium text-sm transition-colors"
           >
             ВЕРНУТЬСЯ НА ГЛАВНУЮ
           </Link>
@@ -93,7 +93,7 @@ export default function CheckoutPage() {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#F7B538] transition-colors"
+                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#A67C52] transition-colors"
                       placeholder="Ваше имя"
                     />
                   </div>
@@ -104,7 +104,7 @@ export default function CheckoutPage() {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#F7B538] transition-colors"
+                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#A67C52] transition-colors"
                       placeholder="+7 (999) 123-45-67"
                     />
                   </div>
@@ -115,7 +115,7 @@ export default function CheckoutPage() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#F7B538] transition-colors"
+                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#A67C52] transition-colors"
                       placeholder="email@example.com"
                     />
                   </div>
@@ -132,7 +132,7 @@ export default function CheckoutPage() {
                       required
                       value={formData.city}
                       onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#F7B538] transition-colors"
+                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#A67C52] transition-colors"
                       placeholder="Москва"
                     />
                   </div>
@@ -143,7 +143,7 @@ export default function CheckoutPage() {
                       required
                       value={formData.address}
                       onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#F7B538] transition-colors"
+                      className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#A67C52] transition-colors"
                       placeholder="Улица, дом, квартира"
                     />
                   </div>
@@ -153,16 +153,16 @@ export default function CheckoutPage() {
               <div className="bg-[#000a1a] border border-white/5 rounded-lg p-6">
                 <h2 className="font-display text-xl text-[#C5C3C6] mb-4">Способ оплаты</h2>
                 <div className="space-y-3">
-                  <label className="flex items-center gap-3 p-4 border border-[#F7B538]/30 bg-[#F7B538]/5 rounded-lg cursor-pointer">
+                  <label className="flex items-center gap-3 p-4 border border-[#A67C52]/30 bg-[#A67C52]/5 rounded-lg cursor-pointer">
                     <input
                       type="radio"
                       name="payment"
                       value="card"
                       checked={formData.payment === 'card'}
                       onChange={(e) => setFormData({ ...formData, payment: e.target.value })}
-                      className="accent-[#F7B538]"
+                      className="accent-[#A67C52]"
                     />
-                    <CreditCard className="w-5 h-5 text-[#F7B538]" />
+                    <CreditCard className="w-5 h-5 text-[#A67C52]" />
                     <div>
                       <div className="text-sm text-[#C5C3C6]">Картой при получении</div>
                       <div className="text-xs text-[#5C677D]">Visa, Mastercard, МИР</div>
@@ -175,7 +175,7 @@ export default function CheckoutPage() {
                       value="cash"
                       checked={formData.payment === 'cash'}
                       onChange={(e) => setFormData({ ...formData, payment: e.target.value })}
-                      className="accent-[#F7B538]"
+                      className="accent-[#A67C52]"
                     />
                     <div className="w-5 h-5 flex items-center justify-center text-[#5C677D]">₽</div>
                     <div>
@@ -187,7 +187,7 @@ export default function CheckoutPage() {
 
               <button
                 type="submit"
-                className="w-full py-4 bg-[#F7B538] hover:bg-[#BC6C25] text-[#000814] rounded-md font-medium text-sm transition-colors"
+                className="w-full py-4 bg-[#A67C52] hover:bg-[#BC6C25] text-[#000814] rounded-md font-medium text-sm transition-colors"
               >
                 ПОДТВЕРДИТЬ ЗАКАЗ
               </button>
@@ -209,7 +209,7 @@ export default function CheckoutPage() {
                       <div className="text-xs text-[#5C677D]">
                         {item.size} × {item.quantity}
                       </div>
-                      <div className="text-sm text-[#F7B538]">
+                      <div className="text-sm text-[#A67C52]">
                         {(item.product.price * item.quantity).toLocaleString('ru-RU')} ₽
                       </div>
                     </div>
@@ -229,7 +229,7 @@ export default function CheckoutPage() {
                 </div>
                 <div className="border-t border-white/5 pt-2 flex justify-between">
                   <span className="font-display text-lg text-[#C5C3C6]">ИТОГО</span>
-                  <span className="font-display text-2xl text-[#F7B538]">
+                  <span className="font-display text-2xl text-[#A67C52]">
                     {(totalPrice > 15000 ? totalPrice : totalPrice + 500).toLocaleString('ru-RU')} ₽
                   </span>
                 </div>
