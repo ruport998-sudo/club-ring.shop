@@ -6,7 +6,7 @@ import { useCart } from '../hooks/useCart';
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const closeTimeoutRef = useRef<number | null>(null);
   const { totalItems } = useCart();
   const location = useLocation();
 
@@ -19,7 +19,7 @@ export default function Header() {
   };
 
   const handleMouseLeave = () => {
-    closeTimeoutRef.current = setTimeout(() => {
+    closeTimeoutRef.current = window.setTimeout(() => {
       setActiveDropdown(null);
     }, 200);
   };
