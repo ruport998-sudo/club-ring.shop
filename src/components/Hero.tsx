@@ -28,7 +28,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 sm:px-6">
         <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white text-center leading-none tracking-wider">
-          МОЙ СПОРТ
+          <span className="text-[#C0C0C0]">МОЙ СПОРТ</span>
           <br />
           <span className="text-[#A67C52]">МОЯ ЖИЗНЬ</span>
         </h1>
