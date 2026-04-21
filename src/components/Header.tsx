@@ -36,7 +36,7 @@ export default function Header() {
         { label: 'Спортивные костюмы', path: '/shop/tracksuits' },
         { label: 'Куртки', path: '/shop/jackets' },
         { label: 'Кепки', path: '/shop/caps' },
-        { label: 'Футболки', path: '/shop/tshirts' },
+        { label: 'Футболки и поло', path: '/shop/tshirts' },
       ],
     },
     {

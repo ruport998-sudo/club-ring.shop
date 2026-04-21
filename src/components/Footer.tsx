@@ -7,7 +7,7 @@ export default function Footer() {
     { label: 'Спортивные костюмы', path: '/shop/tracksuits' },
     { label: 'Спортивные куртки', path: '/shop/jackets' },
     { label: 'Кепки-бейсболки', path: '/shop/caps' },
-    { label: 'Футболки', path: '/shop/tshirts' },
+    { label: 'Футболки и поло', path: '/shop/tshirts' },
   ];
 
   const sportCategories = [
