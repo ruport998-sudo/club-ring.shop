@@ -300,7 +300,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-[#000000] hover:bg-[#1a1a1a] text-white px-6 py-3 rounded-md font-medium text-sm transition-colors min-w-[160px] justify-center"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 3.6c4.64 0 8.4 3.76 8.4 8.4s-3.76 8.4-8.4 8.4-8.4-3.76-8.4-8.4 3.76-8.4 8.4-8.4zm0 2.4a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/>
+                <path d="M12 0l3.708 8.292L24 12l-8.292 3.708L12 24l-3.708-8.292L0 12l8.292-3.708L12 0z"/>
               </svg>
               Дзен
             </a>
