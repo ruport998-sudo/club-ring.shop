@@ -242,7 +242,7 @@ export const categories = [
   { id: "tracksuits", name: "СПОРТИВНЫЕ КОСТЮМЫ", image: "/products/jacket-1.jpg" },
   { id: "jackets", name: "СПОРТИВНЫЕ КУРТКИ", image: "/products/jacket-1.jpg" },
   { id: "caps", name: "КЕПКИ-БЕЙСБОЛКИ", image: "/products/cap-1.jpg" },
-  { id: "tshirts", name: "ФУТБОЛКИ", image: "/products/mma-shorts-1.jpg" },
+  { id: "tshirts", name: "ФУТБОЛКИ И ПОЛО", image: "/products/mma-shorts-1.jpg" },
 ];
 
 export const sportCategories = [
