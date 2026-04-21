@@ -9,7 +9,7 @@ interface ChatMessage {
 export default function AIChat() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'assistant', content: 'Здравствуйте! Я ИИ-консультант CLUB RING. Чем могу помочь? С радостью подскажу по размерам, наличию и подберу экипировку!' }
+    { role: 'assistant', content: 'Здравствуйте! Я ИИ-консультант CLUB RING. Чем могу помочь? С радостью подскажу по размерам, наличию и подберу одежду!' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);

@@ -10,7 +10,7 @@ export default function ContactsPage() {
             СВЯЖИТЕСЬ С НАМИ
           </h1>
           <p className="mt-4 text-sm text-[#5C677D] max-w-2xl">
-            Мы всегда рады помочь вам с выбором экипировки и ответить на любые вопросы.
+            Мы всегда рады помочь вам с выбором одежды и ответить на любые вопросы.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function ContactsPage() {
                 <div>
                   <label className="block text-xs text-[#5C677D] mb-2">Тема</label>
                   <select className="w-full bg-[#000814] border border-white/10 rounded-md px-4 py-3 text-sm text-[#C5C3C6] focus:outline-none focus:border-[#A67C52] transition-colors">
-                    <option>Выбор экипировки</option>
+                    <option>Выбор одежды</option>
                     <option>Заказ и доставка</option>
                     <option>Возврат и обмен</option>
                     <option>Сотрудничество</option>
