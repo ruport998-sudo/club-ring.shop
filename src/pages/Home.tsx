@@ -38,7 +38,7 @@ export default function Home() {
       </section>
 
       {/* New Arrivals */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/5">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-16 border-t border-white/5">
         <div className="flex items-end justify-between mb-10">
           <div>
             <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">Новинки</span>
@@ -62,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* Categories */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/5">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-16 border-t border-white/5">
         <div className="mb-10">
           <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">Каталог</span>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#C5C3C6] mt-2">
@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* Sports Categories */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/5">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-16 border-t border-white/5">
         <div className="mb-10">
           <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">Виды спорта</span>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#C5C3C6] mt-2">
@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Video Blog Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/5">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-16 border-t border-white/5">
         <div className="mb-10">
           <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">Контент</span>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#C5C3C6] mt-2">
@@ -159,7 +159,7 @@ export default function Home() {
       </section>
 
       {/* Articles Preview */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/5">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-16 border-t border-white/5">
         <div className="flex items-end justify-between mb-10">
           <div>
             <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">Статьи</span>
@@ -211,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* Reviews Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/5">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-16 border-t border-white/5">
         <div className="flex items-end justify-between mb-10">
           <div>
             <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">Отзывы</span>
@@ -262,7 +262,7 @@ export default function Home() {
       </section>
 
       {/* Social Channels */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/5">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-16 border-t border-white/5">
         <div className="bg-gradient-to-r from-[#A67C52]/10 to-[#BC6C25]/10 border border-[#A67C52]/20 rounded-xl p-8 sm:p-12 text-center">
           <h2 className="font-display text-3xl sm:text-4xl text-[#C5C3C6]">
             НАШИ КАНАЛЫ
