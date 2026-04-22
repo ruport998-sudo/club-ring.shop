@@ -59,7 +59,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
-            <span className="font-display text-2xl lg:text-3xl text-[#A67C52] tracking-wider">
+            <span className="font-display text-2xl lg:text-3xl font-bold text-[#A67C52] tracking-wider">
               CLUB RING
             </span>
           </Link>
