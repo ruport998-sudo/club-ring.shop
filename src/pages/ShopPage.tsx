@@ -45,7 +45,7 @@ export default function ShopPage() {
     : 'Все товары';
 
   return (
-    <div className="pt-24 sm:pt-28 pb-16">
+    <div className="pt-20 sm:pt-28 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb & Title */}
         <div className="mb-8">

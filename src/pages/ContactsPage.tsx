@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
 
 export default function ContactsPage() {
   return (
-    <div className="pt-24 sm:pt-28 pb-16">
+    <div className="pt-20 sm:pt-28 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">Контакты</span>

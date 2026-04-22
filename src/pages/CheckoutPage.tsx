@@ -73,7 +73,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="pt-24 sm:pt-28 pb-16">
+    <div className="pt-20 sm:pt-28 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl sm:text-5xl text-[#C5C3C6] mb-8">
           ОФОРМЛЕНИЕ ЗАКАЗА

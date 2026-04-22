@@ -7,7 +7,7 @@ export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="pt-24 sm:pt-28 pb-16">
+    <div className="pt-20 sm:pt-28 pb-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">FAQ</span>

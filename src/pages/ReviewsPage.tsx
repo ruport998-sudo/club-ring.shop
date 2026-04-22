@@ -18,7 +18,7 @@ export default function ReviewsPage() {
   };
 
   return (
-    <div className="pt-24 sm:pt-28 pb-16">
+    <div className="pt-20 sm:pt-28 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <span className="text-[10px] text-[#A67C52] tracking-[0.3em] uppercase">Отзывы</span>
